@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @import 'tailwindcss';
 
 @theme {
-    --background-image-noise: linear-gradient(
+    /* --background-image-noise: linear-gradient(
             to bottom,
             color-mix(in oklab, var(--color-neutral-950) 0%, transparent),
             color-mix(in oklab, var(--color-neutral-950) 100%, transparent)
         ),
-        url('/images/noise.png');
-    --color-primary: #2bdcd2;
-    --color-primary-content: #171717;
-    --color-secondary: #016968;
+        url('/images/noise.png'); */
+    --color-primary: #398564;
+    --color-primary-content: #ffffff;
+    --color-secondary: #398564;
     --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
         'Noto Color Emoji';
 }
@@ -36,6 +36,56 @@
     :not(pre) > code {
         @apply px-1 py-0.5 font-mono rounded bg-neutral-900 text-yellow-200;
         font-size: 0.9em;
+    }
+
+    .full-width-image {
+        background-image: url('/images/stock-banner.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+        margin: 0;
+        width: 100vw;
+        height: max(50vh, 400px);
+        padding: 6vw;
+
+        color: white;
+        text-align: center;
+
+        display: flex;            /* required for justify/align to work */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        scroll-snap-align: center;
+
+        background-blend-mode: soft-light;
+        background-color: rgba(0, 0, 0, 0.4745098039215686);
+
+    }
+
+    .overview {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: anchor-center;
+        margin-top: 45px;
+        padding: 6vw;
+        text-align: center;
+    }
+
+    .form-title {
+        font-family: 'Inter';
+        color: #1e1e1ed9;
+        font-weight: 700;
+        text-align: center;
+        align-self: center;
+    }
+
+    .button-container {
+        padding-inline: calc(var(--spacing) * 6);
+        width: max(320px, 50vw);
+        max-width: 800px
     }
 }
 
