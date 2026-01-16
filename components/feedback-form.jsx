@@ -35,7 +35,7 @@ export function FeedbackForm() {
     return (
         <div className="w-full md:max-w-md" style={{ width: 'max(320px, 50vw)', maxWidth: '800px', justifySelf: 'center', marginBottom: '6vw' }}>
             <Card title="Connect with Us">
-                <form name="feedback" onSubmit={handleFormSubmit} className="flex flex-col gap-3 align-center" >
+                <form name="connect-with-us" onSubmit={handleFormSubmit} className="flex flex-col gap-3 align-center" >
                     <input type="hidden" name="form-name" value="connect-with-us" />
                     <input name="name" type="text" placeholder="Name" required className="input" />
                     <input name="email" type="email" placeholder="Email (optional)" className="input" />
