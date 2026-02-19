@@ -41,7 +41,7 @@ export default function Page() {
                     </p>
 
                     <div className='button-container'>
-                        <a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/1160395772?share=copy&fl=sv&fe=ci" className="btn btn-lg sm:min-w-64" style={{ fontFamily: 'Inter', fontSize: '1rem', marginTop: '20px', width: '100%', height: '52px'}}>
+                        <a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/1166392295?share=copy&fl=sv&fe=ci" className="btn btn-lg sm:min-w-64" style={{ fontFamily: 'Inter', fontSize: '1rem', marginTop: '20px', width: '100%', height: '52px'}}>
                             See How it Works
                         </a>
                     </div>
